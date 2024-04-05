@@ -5,11 +5,9 @@ function LayoutRoutesComponent({ children }) {
       <div className="bg-green-400 flex flex-col justify-between min-h-[100dvh]">
         <header className="bg-red-400 h-[10dvh]">header</header>
         <div className="bg-red-500 flex min-h-[80dvh]">
-          <aside className="bg-yellow-300 flex  w-[15dvw]">
+          <aside className="bg-yellow-300 flex  w-[15dvw] relative">
         <h1 className="bg-green-400 w-[97%]">Sidebar</h1>
-        <div className="bg-pink-300 w-[3dvw] h-[3dvh]">
-        <ExpandSideBarIcon/>
-        </div>
+        <ExpandSideBarIcon className={"bg-pink-300 w-[8dvw] h-[8dvh]"}/>
         
           </aside>
           <div className="bg-blue-600 text-white w-[85dvw]">{children}</div>
