@@ -12,8 +12,8 @@ function LayoutRoutesComponent({ children }) {
       <div className="bg-green-400 flex flex-col justify-between min-h-[100dvh]">
         <header className="bg-red-400 h-[10dvh]">header</header>
         <div className="bg-red-500 flex min-h-[80dvh]">
-          <aside className="bg-yellow-300 flex  w-[15dvw] relative">
-            <h1 className={`bg-green-400 w-[100%] transition-all ease-in-out  duration-1000 ${sideBarCollapse?"w-[30%]":"w-[100%]"}`}>Sidebar</h1>
+          <aside className={`bg-yellow-300 flex  w-[15dvw] relative transition-all ease-in-out  duration-1000 ${sideBarCollapse?"w-[30%]":"w-[100%]"}`}>
+            <h1 className={` `}>Sidebar</h1>
             <span onClick={sideBarCollapseFunc}><ExpandSideBarIcon className={"bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-0"} /></span>
           </aside>
           <div className="bg-blue-600 text-white w-[85%] ">{children}</div>
