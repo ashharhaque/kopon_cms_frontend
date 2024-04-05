@@ -6,9 +6,8 @@ function LayoutRoutesComponent({ children }) {
         <header className="bg-red-400 h-[10dvh]">header</header>
         <div className="bg-red-500 flex min-h-[80dvh]">
           <aside className="bg-yellow-300 flex  w-[15dvw] relative">
-        <h1 className="bg-green-400 w-[97%]">Sidebar</h1>
-        <ExpandSideBarIcon className={"bg-pink-300 w-[8dvw] h-[8dvh]"}/>
-        
+            <h1 className="bg-green-400 w-[100%]">Sidebar</h1>
+            <ExpandSideBarIcon className={"bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-0"} />
           </aside>
           <div className="bg-blue-600 text-white w-[85dvw]">{children}</div>
         </div>
