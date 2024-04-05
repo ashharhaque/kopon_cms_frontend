@@ -14,7 +14,7 @@ function LayoutRoutesComponent({ children }) {
         <div className="bg-red-500 flex min-h-[80dvh]">
           <aside className={`bg-yellow-300 flex  w-[10%] relative transition-all ease-in-out  duration-1000 ${sideBarCollapse?"w-[0%] opacity-0":"w-[10%]"}`}>
             <h1 className={` `}>Sidebar</h1>
-            <span onClick={sideBarCollapseFunc}><ExpandSideBarIcon className={"bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-0"} /></span>
+            <span onClick={sideBarCollapseFunc}><ExpandSideBarIcon className={`bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-0 transition-all ease-in-out  duration-1000 ${sideBarCollapse?"":""}`} /></span>
           </aside>
           <div className="bg-blue-600 text-white w-[100%] ">{children}</div>
         </div>
