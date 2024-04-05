@@ -16,7 +16,7 @@ function LayoutRoutesComponent({ children }) {
             <h1 className={`bg-green-400 w-[100%] transition-all ease-in-out  duration-1000 ${sideBarCollapse?"w-[30%]":"w-[100%]"}`}>Sidebar</h1>
             <span onClick={sideBarCollapseFunc}><ExpandSideBarIcon className={"bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-0"} /></span>
           </aside>
-          <div className="bg-blue-600 text-white w-[85dvw]">{children}</div>
+          <div className="bg-blue-600 text-white w-[85%] ">{children}</div>
         </div>
 
         <footer className="bg-fuchsia-600 min-h-[10dvh]">
