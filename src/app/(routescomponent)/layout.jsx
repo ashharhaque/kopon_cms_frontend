@@ -14,16 +14,16 @@ function LayoutRoutesComponent({ children }) {
         <header className="bg-red-400 h-[10dvh]">header</header>
         <div className="bg-red-500 flex min-h-[80dvh] relative">
           <aside className={`bg-yellow-300 flex  relative transition-all ease-in-out  duration-1000 ${sideBarCollapse?"w-[0%]":"w-[15%]"}`}>
-            <h1 className={` `}>Sidebar</h1>
+            {/* <h1 className={` `}>Sidebar</h1> */}
           <span onClick={sideBarCollapseFunc}><ExpandSideBarIcon className={`bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-[-40px] transition-all ease-in-out  duration-1000 ${sideBarCollapse?"rotate-180":"rotate-0"}`} /></span>
-                {/* <ul className="flex flex-col justify-around bg-blue-400 h-[50%]">
-                    <li className="flex"><HomeIcon className={"basis-[30%]"}/><span>Home</span></li>
-                    <li className="flex"><HomeIcon className={"basis-[30%]"}/><span>Home</span></li>
-                    <li className="flex"><HomeIcon className={"basis-[30%]"}/><span>Home</span></li>
-                    <li className="flex"><HomeIcon className={"basis-[30%]"}/><span>Home</span></li>
-                    <li className="flex"><HomeIcon className={"basis-[30%]"}/><span>Home</span></li>
+                <ul className="flex flex-col justify-around bg-blue-400 h-[50%]">
+                    <li className="flex"><HomeIcon className={""}/><span>Home</span></li>
+                    <li className="flex"><HomeIcon className={""}/><span>Home</span></li>
+                    <li className="flex"><HomeIcon className={""}/><span>Home</span></li>
+                    <li className="flex"><HomeIcon className={""}/><span>Home</span></li>
+                    <li className="flex"><HomeIcon className={""}/><span>Home</span></li>
                    
-                </ul> */}
+                </ul>
           </aside>
           <div className="bg-blue-600 text-white w-[100%] ">{children}</div>
         </div>
