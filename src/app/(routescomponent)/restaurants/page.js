@@ -1,7 +1,8 @@
 import SummaryOfRestaurant from "@/app/(routescomponent)/restaurants/Summary";
 
 function Restaurants() {
-  const restaurants=[{
+  const restaurants=[
+    {
     "name":"Kentucky Fried Chicken",
     "opening_time":"09:30",
     "closing_time":"22:30",
@@ -16,8 +17,125 @@ function Restaurants() {
         }
     },
     "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
   
-  }]
+  },
+  {
+    "name":"Kentucky Fried Chicken",
+    "opening_time":"09:30",
+    "closing_time":"22:30",
+    "total_products":{
+        "non-veg":{
+            "mild":"5",
+            "spicy":"20"
+        },
+        "veg":{
+            "mild":"6",
+            "spicy":"49"
+        }
+    },
+    "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
+  
+  },
+  {
+    "name":"Kentucky Fried Chicken",
+    "opening_time":"09:30",
+    "closing_time":"22:30",
+    "total_products":{
+        "non-veg":{
+            "mild":"5",
+            "spicy":"20"
+        },
+        "veg":{
+            "mild":"6",
+            "spicy":"49"
+        }
+    },
+    "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
+  
+  },
+  {
+    "name":"Kentucky Fried Chicken",
+    "opening_time":"09:30",
+    "closing_time":"22:30",
+    "total_products":{
+        "non-veg":{
+            "mild":"5",
+            "spicy":"20"
+        },
+        "veg":{
+            "mild":"6",
+            "spicy":"49"
+        }
+    },
+    "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
+  
+  },
+  {
+    "name":"Kentucky Fried Chicken",
+    "opening_time":"09:30",
+    "closing_time":"22:30",
+    "total_products":{
+        "non-veg":{
+            "mild":"5",
+            "spicy":"20"
+        },
+        "veg":{
+            "mild":"6",
+            "spicy":"49"
+        }
+    },
+    "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
+  
+  },
+  {
+    "name":"Kentucky Fried Chicken",
+    "opening_time":"09:30",
+    "closing_time":"22:30",
+    "total_products":{
+        "non-veg":{
+            "mild":"5",
+            "spicy":"20"
+        },
+        "veg":{
+            "mild":"6",
+            "spicy":"49"
+        }
+    },
+    "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
+  
+  },
+  {
+    "name":"Kentucky Fried Chicken",
+    "opening_time":"09:30",
+    "closing_time":"22:30",
+    "total_products":{
+        "non-veg":{
+            "mild":"5",
+            "spicy":"20"
+        },
+        "veg":{
+            "mild":"6",
+            "spicy":"49"
+        }
+    },
+    "total_employee":"12",
+    "total_sales":"11",
+    "imgSrc":"/images/restaurantImageBus.jpeg"
+  
+  }
+]
   return (
     <>
       <div className="bg-yellow-200 flex flex-1">
