@@ -20,10 +20,8 @@ function HomeIcon({ className }) {
         x="0px"
         y="0px"
         viewBox="0 0 122.88 112.07"
-        style="enable-background:new 0 0 122.88 112.07"
        
       >
-        <style type="text/css"></style>
         <g>
           <path
             class="st0"
