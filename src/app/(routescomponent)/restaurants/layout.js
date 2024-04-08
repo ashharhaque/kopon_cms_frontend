@@ -1,7 +1,7 @@
 function LayoutRestaurant({children}) {
   return (
     <>
-    <div>Layout Restaurant</div>
+    <div className="bg-green-400 min-h-[10dvh]">Layout Restaurant</div>
     <div>{children}</div>
     </>
   );
