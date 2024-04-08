@@ -1,6 +1,13 @@
 "use client";
 import { useState } from "react";
-import { ExpandSideBarIcon, HomeIcon } from "@/icons/icons";
+import {
+  ExpandSideBarIcon,
+  HomeIcon,
+  CustomerIcon,
+  ProductIcon,
+  OrderIcon,
+  HelpIcon,
+} from "@/icons/icons";
 function Sidebar({ className }) {
   const [sideBarCollapse, setSideBarCollapse] = useState(false);
   const sideBarCollapseFunc = () => {
@@ -29,6 +36,18 @@ function Sidebar({ className }) {
           <li className="flex">
             <HomeIcon className={"w-[15%]"} />
             <span>Home</span>
+          </li>
+          <li className="flex">
+            <ProductIcon className={"w-[15%]"} />
+            <span>Products</span>
+          </li>
+          <li className="flex">
+            <CustomerIcon className={"w-[15%]"} />
+            <span>Customers</span>
+          </li>
+          <li className="flex">
+            <HelpIcon className={"w-[15%]"} />
+            <span>Help</span>
           </li>
         </ul>
       </aside>
