@@ -16,7 +16,7 @@ function Sidebar({ className }) {
   return (
     <>
       <aside
-        className={`bg-yellow-300 flex  relative transition-all ease-in-out  duration-1000 ${
+        className={`bg-yellow-300 flex items-center relative transition-all ease-in-out  duration-1000 ${
           sideBarCollapse ? "w-[0%]" : "w-[15%]"
         } ${className}`}
       >
