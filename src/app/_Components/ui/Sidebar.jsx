@@ -7,6 +7,9 @@ import {
   ProductIcon,
   OrderIcon,
   HelpIcon,
+  RestaurantIcon,
+  EmployeeIcon,
+  StaticsIcon
 } from "@/icons/icons";
 function Sidebar({ className }) {
   const [sideBarCollapse, setSideBarCollapse] = useState(false);
@@ -29,7 +32,7 @@ function Sidebar({ className }) {
           />
         </span>
         <ul
-          className={`flex flex-col justify-around bg-blue-400 h-[50%] p-5 transition-all ease-in-out  duration-1000 origin-left ${
+          className={`flex flex-col justify-around bg-blue-400 h-[70%] p-5 transition-all ease-in-out  duration-1000 origin-left ${
             sideBarCollapse ? "scale-x-0" : "scale-x-100"
           }`}
         >
@@ -44,6 +47,22 @@ function Sidebar({ className }) {
           <li className="flex">
             <CustomerIcon className={"w-[15%] mx-2"} />
             <span>Customers</span>
+          </li>
+          <li className="flex">
+            <RestaurantIcon className={"w-[15%] mx-2"} />
+            <span>Restaurants</span>
+          </li>
+          <li className="flex">
+            <EmployeeIcon className={"w-[15%] mx-2"} />
+            <span>Employee</span>
+          </li>
+          <li className="flex">
+            <OrderIcon className={"w-[15%] mx-2"} />
+            <span>Orders</span>
+          </li>
+          <li className="flex">
+            <StaticsIcon className={"w-[15%] mx-2"} />
+            <span>Statics</span>
           </li>
           <li className="flex">
             <HelpIcon className={"w-[15%] mx-2"} />
