@@ -140,6 +140,11 @@ function Restaurants() {
     <>
       <div className="bg-yellow-200 flex flex-1">
         <div className="bg-pink-400 min-h-[70dvh] w-[100%]">
+        {/*restaurant list starts */}
+        <div className="bg-violet-400 h-[10dvh]">
+            restaurant
+        </div>
+        {/*restaurant list ends */}
 
         </div>
         {/* <SummaryOfRestaurant className="bg-green-300 w-[20%]"/> */}
