@@ -15,13 +15,7 @@ function ExpandSideBarIcon({ className }) {
 function HomeIcon({ className }) {
   return (
     <>
-      <svg
-        className={className}
-        x="0px"
-        y="0px"
-        viewBox="0 0 122.88 112.07"
-       
-      >
+      <svg className={className} x="0px" y="0px" viewBox="0 0 122.88 112.07">
         <g>
           <path
             class="st0"
@@ -32,4 +26,28 @@ function HomeIcon({ className }) {
     </>
   );
 }
-export { ExpandSideBarIcon ,HomeIcon};
+
+function HelpIcon({ className }) {
+  return <></>;
+}
+function ProductIcon({ className }) {
+  return <></>;
+}
+function CustomerIcon({ className }) {
+  return <></>;
+}
+function OrderIcon({ className }) {
+  return <></>;
+}
+function BellIcon({ className }) {
+  return <></>;
+}
+export {
+  ExpandSideBarIcon,
+  HomeIcon,
+  HelpIcon,
+  ProductIcon,
+  CustomerIcon,
+  OrderIcon,
+  BellIcon,
+};
