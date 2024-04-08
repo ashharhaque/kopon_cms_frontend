@@ -1,5 +1,5 @@
 import SummaryOfRestaurant from "@/app/(routescomponent)/restaurants/Summary";
-
+import RestaurantList from "@/app/(routescomponent)/restaurants/list"
 function Restaurants() {
   const restaurants=[
     {
@@ -141,9 +141,7 @@ function Restaurants() {
       <div className="bg-yellow-200 flex flex-1">
         <div className="bg-pink-400 min-h-[70dvh] w-[100%]">
         {/*restaurant list starts */}
-        <div className="bg-violet-400 h-[10dvh]">
-            restaurant
-        </div>
+        <RestaurantList/>
         {/*restaurant list ends */}
 
         </div>
