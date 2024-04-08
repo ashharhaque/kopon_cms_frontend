@@ -29,24 +29,24 @@ function Sidebar({ className }) {
           />
         </span>
         <ul
-          className={`flex flex-col justify-around bg-blue-400 h-[50%] transition-all ease-in-out  duration-1000 origin-left ${
+          className={`flex flex-col justify-around bg-blue-400 h-[50%] p-5 transition-all ease-in-out  duration-1000 origin-left ${
             sideBarCollapse ? "scale-x-0" : "scale-x-100"
           }`}
         >
           <li className="flex">
-            <HomeIcon className={"w-[15%]"} />
+            <HomeIcon className={"w-[15%] mx-2"} />
             <span>Home</span>
           </li>
           <li className="flex">
-            <ProductIcon className={"w-[15%]"} />
+            <ProductIcon className={"w-[15%] mx-2"} />
             <span>Products</span>
           </li>
           <li className="flex">
-            <CustomerIcon className={"w-[15%]"} />
+            <CustomerIcon className={"w-[15%] mx-2"} />
             <span>Customers</span>
           </li>
           <li className="flex">
-            <HelpIcon className={"w-[15%]"} />
+            <HelpIcon className={"w-[15%] mx-2"} />
             <span>Help</span>
           </li>
         </ul>
