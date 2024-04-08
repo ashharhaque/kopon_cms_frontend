@@ -26,7 +26,7 @@ function Sidebar({ className }) {
         {/* <h1 className={` `}>Sidebar</h1> */}
         <span onClick={sideBarCollapseFunc}>
           <ExpandSideBarIcon
-            className={`bg-pink-300 w-[4dvw] h-[4dvh] absolute top-1/2 right-[-40px] transition-all ease-in-out  duration-1000 ${
+            className={`bg-pink-300 z-50 w-[4dvw] h-[4dvh] absolute top-1/2 right-[-40px] transition-all ease-in-out  duration-1000 ${
               sideBarCollapse ? "rotate-180" : "rotate-0"
             }`}
           />
