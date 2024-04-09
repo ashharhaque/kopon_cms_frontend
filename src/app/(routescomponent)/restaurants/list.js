@@ -1,13 +1,12 @@
-
-
-function RestaurantList({className}) {
+import Image from "next/image";
+function RestaurantList({ className }) {
   return (
     <>
       <div class={`relative overflow-x-auto shadow-md `}>
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-            <th scope="col" class="px-6 py-3">
+              <th scope="col" class="px-6 py-3">
                 Logo
               </th>
               <th scope="col" class="px-6 py-3">
@@ -28,12 +27,19 @@ function RestaurantList({className}) {
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <th
+            <tr class=" bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th
                 scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
-                Apple Logo
+                <div className="bg-blue-400 w-[20dvh] h-[20dvh]">
+                  <Image
+                    src="/images/restaurantImageBus.jpeg"
+                     width={100}
+                     height={100}
+                    className="object-cover w-[100%] h-[100%]"
+                  />
+                </div>
               </th>
               <th
                 scope="row"
@@ -54,7 +60,7 @@ function RestaurantList({className}) {
               </td>
             </tr>
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <th
+              <th
                 scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
@@ -79,7 +85,7 @@ function RestaurantList({className}) {
               </td>
             </tr>
             <tr class="bg-white dark:bg-gray-800">
-            <th
+              <th
                 scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
