@@ -11,16 +11,16 @@ function RestaurantList({ className }) {
                 Logo
               </th>
               <th scope="col" class="px-6 py-3">
-                Product name
+                Restaurant  Name
               </th>
               <th scope="col" class="px-6 py-3">
-                Color
+                Restaurant  Address
               </th>
               <th scope="col" class="px-6 py-3">
-                Category
+                Opening Time
               </th>
               <th scope="col" class="px-6 py-3">
-                Price
+                Closing Time
               </th>
               <th scope="col" class="px-6 py-3">
                 Action
@@ -48,9 +48,16 @@ function RestaurantList({ className }) {
               >
                 Apple MacBook Pro 17"
               </th>
-              <td class="px-6 py-4">Silver</td>
-              <td class="px-6 py-4">Laptop</td>
-              <td class="px-6 py-4">$2999</td>
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 text-wrap whitespace-nowrap dark:text-white"
+              >
+                Family Masala,chandigarh city center,<br/>
+                Zirakpur
+              </th>
+
+              <td class="px-6 py-4">09:30 A.M</td>
+              <td class="px-6 py-4">10:30 P.M</td>
               <td class="px-6 py-4">
                 <a
                   href="#"
