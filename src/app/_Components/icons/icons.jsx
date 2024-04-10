@@ -95,7 +95,13 @@ function StaticsIcon({ className }) {
   return (
     <svg
       className={className}
-      style={{ width: '1.0205078125em', height: '1em', verticalAlign: 'middle', fill: 'currentColor', overflow: 'hidden' }}
+      style={{
+        width: "1.0205078125em",
+        height: "1em",
+        verticalAlign: "middle",
+        fill: "currentColor",
+        overflow: "hidden",
+      }}
       viewBox="0 0 1045 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +115,13 @@ function EmployeeIcon({ className }) {
   return (
     <svg
       className={className}
-      style={{ width: '1.0078125em', height: '1em', verticalAlign: 'middle', fill: 'currentColor', overflow: 'hidden' }}
+      style={{
+        width: "1.0078125em",
+        height: "1em",
+        verticalAlign: "middle",
+        fill: "currentColor",
+        overflow: "hidden",
+      }}
       viewBox="0 0 1032 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +139,13 @@ function RestaurantIcon({ className }) {
   return (
     <svg
       className={className}
-      style={{ width: '1em', height: '1em', verticalAlign: 'middle', fill: 'currentColor', overflow: 'hidden' }}
+      style={{
+        width: "1em",
+        height: "1em",
+        verticalAlign: "middle",
+        fill: "currentColor",
+        overflow: "hidden",
+      }}
       viewBox="0 0 1024 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -139,6 +157,17 @@ function RestaurantIcon({ className }) {
   );
 }
 
+function ForwardIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1024 1024"
+    >
+      <path d="M213.333333 554.666667h506.026667l-154.88 186.026666a42.666667 42.666667 0 0 0 65.706667 54.613334l213.333333-256a50.773333 50.773333 0 0 0 3.84-6.4c0-2.133333 2.133333-3.413333 2.986667-5.546667A42.666667 42.666667 0 0 0 853.333333 512a42.666667 42.666667 0 0 0-2.986666-15.36c0-2.133333-2.133333-3.413333-2.986667-5.546667a50.773333 50.773333 0 0 0-3.84-6.4l-213.333333-256A42.666667 42.666667 0 0 0 597.333333 213.333333a42.666667 42.666667 0 0 0-27.306666 9.813334 42.666667 42.666667 0 0 0-5.546667 60.16L719.36 469.333333H213.333333a42.666667 42.666667 0 0 0 0 85.333334z" />
+    </svg>
+  );
+}
 
 export {
   ExpandSideBarIcon,
@@ -151,4 +180,5 @@ export {
   StaticsIcon,
   EmployeeIcon,
   RestaurantIcon,
+  ForwardIcon,
 };
