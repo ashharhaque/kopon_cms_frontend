@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {ForwardIcon} from "@/icons/icons"
 function RestaurantList({ className }) {
   return (
     <>
@@ -55,7 +56,8 @@ function RestaurantList({ className }) {
                   href="#"
                   class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                 >
-                  Edit
+                  <ForwardIcon className=" w-[8dvh]"/>
+                  {/* Edit */}
                 </a>
               </td>
             </tr>
