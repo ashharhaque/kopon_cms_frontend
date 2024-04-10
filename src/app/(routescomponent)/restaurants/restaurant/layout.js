@@ -17,6 +17,11 @@ function SingleRestaurantLayout({children}) {
         <div className='flex items-center h-[10dvh] '>
     <span className=' mx-3'>Is Restaurant Active</span><ToggleButton className="px-2"/>
     </div>
+    <div >
+        <span>Opening Time:{" "}09:30 {" "}A.M{" "}</span>&nbsp;
+        <span className="h-24 border-l border-gray-300"></span>&nbsp;
+        <span>{"  "}Closing Time:{" "}10:30 {" "}P.M{" "}</span>
+    </div>
     </div>
  
     <div>{children}</div>
