@@ -13,7 +13,7 @@ function Dropdown({ className, dropDownTitle,options }) {
       };
     return (
       <>
-        <li key={index} onClick={(e)=>{
+        <li key={index} className="text-center" onClick={(e)=>{
             handleOptionSelect(e.target)
         }}>{option}</li>
       </>
