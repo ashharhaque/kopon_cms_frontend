@@ -1,7 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import ToggleButton from "@/ui/ToggleButton";
-import Modal from "@/ui/Modal";
+import EditRestaurant from "@/app/(routescomponent)/restaurants/restaurant/EditRestaurant";
 function SingleRestaurantLayout({ children }) {
   return (
     <>
@@ -25,11 +24,9 @@ function SingleRestaurantLayout({ children }) {
           <span className="h-24 border-l border-gray-300"></span>&nbsp;
           <span>{"  "}Closing Time: 10:30 P.M </span>
         </div>
-        <div>
-          <p className="bg-red-500 ">EDIT</p>
-        </div>
+        <EditRestaurant/>
       </div>
-      <Modal />
+     
       <div>{children}</div>
     </>
   );

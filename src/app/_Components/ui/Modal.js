@@ -1,16 +1,8 @@
 "use client"
 import { useState } from 'react';
 
-function Modal() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+function Modal({isOpen,closeModal,openModal}) {
+  
 
   return (
     <>
