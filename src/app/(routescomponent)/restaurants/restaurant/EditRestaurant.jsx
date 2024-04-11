@@ -30,7 +30,7 @@ function EditRestaurant() {
         >
           <div>
             <UploadImage />
-            <Dropdown dropDownTitle={"Select Day"}/>
+            <Dropdown dropDownTitle={"Select Day"} options={["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]}/>
           </div>
         </Modal>
       </div>
