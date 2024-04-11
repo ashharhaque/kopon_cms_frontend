@@ -43,7 +43,7 @@ function EditRestaurant() {
                 />
               </p>
             </div>
-            <div className="flex justify-around ">
+            <div className="flex justify-around p-3 ">
               <Dropdown
                 className="flex items-center relative "
                 dropDownTitle={"Select Day"}
@@ -57,7 +57,7 @@ function EditRestaurant() {
                   "SATURDAY",
                 ]}
               />
-              <div className="flex items-center h-[10dvh] ">
+              <div className="flex items-center h-[10dvh] mx-2">
                 <span className=" mx-1 text-black"> Active</span>
                 <ToggleButton className="px-2" />
               </div>
