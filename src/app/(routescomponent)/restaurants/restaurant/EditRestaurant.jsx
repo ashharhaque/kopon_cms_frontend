@@ -19,7 +19,7 @@ function EditRestaurant() {
         </p>
       </div>
       <div className=" bg-red-300 ">
-        <Modal isOpen={isOpen} openModal={openModal} closeModal={closeModal} />
+        <Modal isOpen={isOpen} openModal={openModal} closeModal={closeModal} title="Terms of Service" />
       </div>
     </>
   );
