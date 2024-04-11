@@ -45,7 +45,7 @@ function EditRestaurant() {
             </div>
             <div className="flex justify-around ">
               <Dropdown
-                className="flex items-center"
+                className="flex items-center relative "
                 dropDownTitle={"Select Day"}
                 options={[
                   "SUNDAY",
