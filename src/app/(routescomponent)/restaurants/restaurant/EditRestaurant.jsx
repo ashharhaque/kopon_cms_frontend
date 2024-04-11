@@ -16,7 +16,10 @@ function EditRestaurant() {
       <div>
         <p className="bg-red-500 " onClick={openModal}>EDIT</p>
       </div>
+      <div className=" bg-red-300">
       <Modal isOpen={isOpen} openModal={openModal} closeModal={closeModal}/>
+      </div>
+      
     </>
   );
 }
