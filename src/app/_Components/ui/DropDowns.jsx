@@ -47,7 +47,7 @@ function Dropdown({ className, dropDownTitle,options }) {
             className="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="dropdownDefaultButton"
           >
-            {options.map((option,index)=>{
+            {Array.isArray(options) && options.map((option,index)=>{
                 return OPTIONS_LIST(option,index)
             })}
           </ul>
