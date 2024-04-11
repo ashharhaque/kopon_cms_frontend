@@ -1,6 +1,8 @@
+import { useState } from 'react';
 
+function Dropdown({className,dropDownTitle}) {
+  const [isOpen, setIsOpen] = useState(false);
 
-function Dropdown({className,dropDownTitle,isOpen,setIsOpen}) {
   return (
     <div className={`${className} relative inline-block text-left`}>
       <button

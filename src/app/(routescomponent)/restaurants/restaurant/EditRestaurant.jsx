@@ -5,7 +5,6 @@ import UploadImage from "@/app/_Components/ui/UploadImage";
 import Dropdown from "@/app/_Components/ui/DropDowns";
 function EditRestaurant() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isDayDropDownOpen,setIsDayDropDownOpen]=useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -14,9 +13,7 @@ function EditRestaurant() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  const dayDropDownToggle=() =>{
-    setIsDayDropDownOpen(!isDayDropDownOpen)
-  }
+ 
   return (
     <>
       <div>
@@ -33,7 +30,7 @@ function EditRestaurant() {
         >
           <div>
             <UploadImage />
-            <Dropdown dropDownTitle={"Select Day"} isOpen={isDayDropDownOpen} onClick={dayDropDownToggle}/>
+            <Dropdown dropDownTitle={"Select Day"}/>
           </div>
         </Modal>
       </div>
