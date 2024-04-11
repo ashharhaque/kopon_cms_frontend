@@ -2,15 +2,16 @@
 import { useState } from "react";
 import Modal from "@/ui/Modal";
 import UploadImage from "@/app/_Components/ui/UploadImage";
+import Dropdown from "@/app/_Components/ui/DropDowns";
 function EditRestaurant() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
-    setIsOpen(true);
+    setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    setIsOpen(false);
+    setIsModalOpen(false);
   };
   return (
     <>
@@ -21,13 +22,14 @@ function EditRestaurant() {
       </div>
       <div className=" bg-red-300 ">
         <Modal
-          isOpen={isOpen}
+          isOpen={isModalOpen}
           openModal={openModal}
           closeModal={closeModal}
           title="Edit Restaurant"
         >
           <div>
             <UploadImage />
+            <Dropdown/>
           </div>
         </Modal>
       </div>
