@@ -33,8 +33,8 @@ function EditRestaurant() {
             <UploadImage />
             <div className="flex justify-around ">
             <Dropdown dropDownTitle={"Select Day"} options={["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]}/>
-            <Timings className="bg-red-400 flex justify-center" timing_title={"Opening Time"}/>
-            <Timings className="bg-red-400" timing_title={"Closing Time"}/>
+            <Timings className="bg-red-400 flex justify-center items-center" timing_title={"Opening Time"}/>
+            <Timings className="bg-red-400 flex justify-center items-center" timing_title={"Closing Time"}/>
             </div>
             
 
