@@ -6,7 +6,7 @@ function UploadImage({className}) {
  
   return (
    <>
-   <div className={`${className} bg-blue-300 flex  justify-center p-3`}>
+   <div className={`${className}  flex  justify-center p-3`}>
     <div className="bg-green-400 flex justify-between">
     <Image
         src="/images/restaurantImageBus.jpeg"
