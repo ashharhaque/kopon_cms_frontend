@@ -1,6 +1,6 @@
 function SingleRestaurant() {
   const OptionBox = ({ children }) => {
-    return <div className="bg-green-400 text-center flex items-center justify-center w-[40dvw] h-[40dvh] text-black m-5">{children}</div>;
+    return <div className="bg-green-400 text-center flex items-center justify-center w-[40dvw] h-[40dvh] text-black m-5 rounded-3xl">{children}</div>;
   };
   return (
     <>
@@ -9,7 +9,7 @@ function SingleRestaurant() {
         <OptionBox>Products</OptionBox>
       </div>
       <div className="bg-red-400 flex justify-center">
-        <OptionBox>Orders</OptionBox>
+        <OptionBox>Live Orders</OptionBox>
         <OptionBox>Statics</OptionBox>
       </div>
     </>
