@@ -3,6 +3,7 @@ import { useState } from "react";
 import ProductList from "@/restaurants/restaurant/productsandcategories/products/productList";
 import SearchBar from "@/ui/SearchBar";
 import Modal from "@/app/_Components/ui/Modal";
+import EditProduct from "@/restaurants/restaurant/productsandcategories/products/EditProduct";
 function Products({ className, children }) {
   const [addProduct, setAddProduct] = useState(false);
 
@@ -32,7 +33,7 @@ function Products({ className, children }) {
             
             title={"ADD PRODUCT"}
           >
-            <div className={"text-black"}>ADd product</div>
+            <EditProduct className={"text-black"}/>
           </Modal>
         </>
       )}
