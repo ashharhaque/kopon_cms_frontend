@@ -30,16 +30,16 @@ function EditProduct({ className }) {
             TAXES AND CHARGES
           </p>
         </div>
-        <h3 className="flex justify-center">TAXES</h3>
+        <h3 className="flex justify-center items-center">TAXES</h3>
         <div className="bg-blue-400 flex justify-center items-center min-h-[5dvh] my-2 p-5">
         {/* <span>Tax1</span><span>(15% on product price){" : "}</span><span className="bg-red-400 flex items-center h-[1dvh]"><ToggleButton className={"bg-green-500 "}/></span> */}
        {/* <RadioButtonGroup/> */}
        {/* <HorizontalRadioList/> */}
-       <VerticalRadioWithSubText  text={"Tax 1"} subText={"(15% on product price)"}/>
-       <VerticalRadioWithSubText text={"Tax 2"} subText={"(25% on product price)"}/>
-       <VerticalRadioWithSubText text={"Tax 3"} subText={"(35% on product price)"}/>
-       <VerticalRadioWithSubText text={"Tax 4"} subText={"(45% on product price)"}/>
-       <VerticalRadioWithSubText text={"Tax 5"} subText={"(55% on product price)"}/>
+       <VerticalRadioWithSubText className={"flex"}  text={"Tax 1"} subText={"(15% on product price)"}/>
+       <VerticalRadioWithSubText className={"flex"}  text={"Tax 2"} subText={"(25% on product price)"}/>
+       <VerticalRadioWithSubText className={"flex"}  text={"Tax 3"} subText={"(35% on product price)"}/>
+       <VerticalRadioWithSubText className={"flex"} text={"Tax 4"} subText={"(45% on product price)"}/>
+       <VerticalRadioWithSubText className={"flex "} text={"Tax 5"} subText={"(55% on product price)"}/>
 
 
         </div>
