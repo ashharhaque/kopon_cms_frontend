@@ -52,7 +52,7 @@ const CategroyList = ({ className }) => {
               <td className="px-6 py-4">11</td>
               <td className="px-6 py-4">
                 <Link
-                  href="/restaurants/restaurant"
+                  href="/restaurants/restaurant/productsandcategories/products"
                   className="font-medium text-blue-600 dark:text-blue-500 hover:underline text-center"
                 >
                   {/* <ForwardIcon className=" w-[8dvh]"/> */}
