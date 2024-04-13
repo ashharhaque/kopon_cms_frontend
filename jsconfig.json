@@ -4,7 +4,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/icons/*":["./src/app/_Components/icons/*"],
-      "@/ui/*":["./src/app/_Components/ui/*"]
+      "@/ui/*":["./src/app/_Components/ui/*"],
+      "@/restaurants/*":["./src/app/(routescomponent)/restaurants/*"]
     }
   }
 }

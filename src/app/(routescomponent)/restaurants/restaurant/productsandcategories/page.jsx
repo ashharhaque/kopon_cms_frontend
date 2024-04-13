@@ -1,8 +1,10 @@
+import Categories from "@/restaurants/restaurant/productsandcategories/categories/index";
 
-
-function ProductAndCategories() {
+function ProductAndCategories({className}) {
   return (
-    <div>ProductAndCategories</div>
+    <div className={`${className}`}>
+      <Categories/>
+    </div>
   )
 }
 
