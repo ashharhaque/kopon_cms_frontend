@@ -13,16 +13,16 @@ const CategroyList = ({ className }) => {
                 Logo
               </th>
               <th scope="col" className="px-6 py-3">
-                Restaurant  Name
+                Category Name
               </th>
               <th scope="col" className="px-6 py-3">
-                Restaurant  Address
+                Total Products
               </th>
               <th scope="col" className="px-6 py-3">
-                Opening Time
+                Active Products
               </th>
               <th scope="col" className="px-6 py-3">
-                Closing Time
+                InActive Products
               </th>
               <th scope="col" className="px-6 py-3">
                 Action
@@ -42,21 +42,21 @@ const CategroyList = ({ className }) => {
                 </div>
               </td>
               <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                Apple MacBook Pro 17"
+                Burgers 
               </td>
               <td className="px-6 py-4 font-medium text-gray-900 text-wrap whitespace-nowrap dark:text-white">
-                Family Masala,chandigarh city center,<br/>
-                Zirakpur
+               100
               </td>
 
-              <td className="px-6 py-4">09:30 A.M</td>
-              <td className="px-6 py-4">10:30 P.M</td>
+              <td className="px-6 py-4">89</td>
+              <td className="px-6 py-4">11</td>
               <td className="px-6 py-4">
                 <Link
                   href="/restaurants/restaurant"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline text-center"
                 >
-                  <ForwardIcon className=" w-[8dvh]"/>
+                  {/* <ForwardIcon className=" w-[8dvh]"/> */}
+                  <span className="inline-block text-white h-[5dvh] bg-blue-400 p-5 flex items-center justify-center rounded-full hover:bg-black">Add Product</span>
                   {/* Edit */}
                 </Link>
               </td>
