@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link'
 import {ForwardIcon} from "@/icons/icons"
-
+import LinkButton from "@/app/_Components/ui/LinkButton";
 const CategroyList = ({ className }) => {
   return (
     <>
@@ -56,7 +56,7 @@ const CategroyList = ({ className }) => {
                   className="font-medium text-blue-600 dark:text-blue-500 hover:underline text-center"
                 >
                   {/* <ForwardIcon className=" w-[8dvh]"/> */}
-                  <span className="inline-block text-white h-[5dvh] bg-blue-400 p-5 flex items-center justify-center rounded-full hover:bg-black">Add Product</span>
+                  <LinkButton className="">See Products</LinkButton>
                   {/* Edit */}
                 </Link>
               </td>
