@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import {ForwardIcon} from "@/icons/icons";
 import LinkButton from "@/app/_Components/ui/LinkButton";
-
+import ToggleButton from "@/app/_Components/ui/ToggleButton";
 function ProductList({className,children}) {
   return (
     <div className={`${className}relative overflow-x-auto shadow-md `}>
@@ -10,21 +10,18 @@ function ProductList({className,children}) {
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Logo
+                Image
               </th>
               <th scope="col" className="px-6 py-3">
-                Category Name
+                Category
               </th>
               <th scope="col" className="px-6 py-3">
-                Total Products
+                Product Name
               </th>
-              <th scope="col" className="px-6 py-3">
-                Active Products
+              <th scope="col" className="px-6 py-3 text-center">
+                Is Product Active
               </th>
-              <th scope="col" className="px-6 py-3">
-                InActive Products
-              </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 text-center">
                 Action
               </th>
             </tr>
@@ -45,18 +42,19 @@ function ProductList({className,children}) {
                 Burgers 
               </td>
               <td className="px-6 py-4 font-medium text-gray-900 text-wrap whitespace-nowrap dark:text-white">
-               100
+               Cheese Burger
               </td>
 
-              <td className="px-6 py-4">89</td>
-              <td className="px-6 py-4">11</td>
+              <td className="px-6 py-4 text-center">
+              <ToggleButton/>
+              </td>
               <td className="px-6 py-4">
                 <Link
                   href="/restaurants/restaurant/productsandcategories/products"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline text-center"
+                  className="font-medium text-white text-center dark:text-blue-500 hover:underline text-center"
                 >
                   {/* <ForwardIcon className=" w-[8dvh]"/> */}
-                  <LinkButton className="">See Products</LinkButton>
+                  <LinkButton >Edit Product</LinkButton>
                   {/* Edit */}
                 </Link>
               </td>
