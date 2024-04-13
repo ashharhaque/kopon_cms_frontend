@@ -2,6 +2,7 @@ import UploadImage from "@/app/_Components/ui/UploadImage";
 import Dropdown from "@/app/_Components/ui/DropDowns";
 import Timings from "@/ui/Timings";
 import ToggleButton from "@/ui/ToggleButton";
+import HorizontalRadioList from "@/app/_Components/ui/HorizontalRadioList";
 function EditProduct({ className }) {
   return (
     <div className={`${className}`}>
@@ -21,7 +22,13 @@ function EditProduct({ className }) {
           </div>
         </div>
         <div>
-          <Dropdown dropDownTitle={"Tax"}></Dropdown>
+          <p className="bg-red-500 text-center">
+            TAXES AND CHARGES
+          </p>
+        </div>
+        <div className="bg-blue-400 flex justify-center items-center min-h-[5dvh]">
+        {/* <span>Tax1</span><span>(15% on product price){" : "}</span><span className="bg-red-400 flex items-center h-[1dvh]"><ToggleButton className={"bg-green-500 "}/></span> */}
+       <HorizontalRadioList/>
         </div>
       </div>
     </div>
