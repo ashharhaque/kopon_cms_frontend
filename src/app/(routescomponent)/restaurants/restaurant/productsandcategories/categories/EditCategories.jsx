@@ -3,7 +3,7 @@ import UploadImage from "@/app/_Components/ui/UploadImage";
 import ToggleButton from "@/ui/ToggleButton";
 
 import VerticalRadioWithSubText from "@/app/_Components/ui/VerticalRadioButton";
-function EditProduct({ className }) {
+function EditCategories({ className }) {
   return (
     <div className={`${className}`}>
       <div>
@@ -135,4 +135,4 @@ function EditProduct({ className }) {
   );
 }
 
-export default EditProduct;
+export default EditCategories;
