@@ -6,7 +6,7 @@ import Modal from "@/app/_Components/ui/Modal";
 import EditProduct from "@/restaurants/restaurant/productsandcategories/products/EditProduct";
 function Products({ className, children }) {
   const [addProduct, setAddProduct] = useState(false);
-
+  const [editProduct,setEditProduct]=useState(false);
   return (
     <div className={`${className}`}>
       <div className="flex justify-center items-center">
@@ -22,7 +22,7 @@ function Products({ className, children }) {
         </span>
         <SearchBar className={"m-4 bg-yellow-300  w-[40dvw] inline-block"} />
       </div>
-      <ProductList />
+      <ProductList editProduct={editProduct} setEditProduct={setEditProduct}/>
       {addProduct && (
         <>
           <Modal
@@ -32,6 +32,20 @@ function Products({ className, children }) {
             }}
             
             title={"ADD PRODUCT"}
+          >
+            <EditProduct className={"text-black"}/>
+          </Modal>
+        </>
+      )}
+       {editProduct && (
+        <>
+          <Modal
+            isOpen={editProduct}
+            closeModal={() => {
+              setEditProduct(!editProduct);
+            }}
+            
+            title={"EDIT PRODUCT"}
           >
             <EditProduct className={"text-black"}/>
           </Modal>

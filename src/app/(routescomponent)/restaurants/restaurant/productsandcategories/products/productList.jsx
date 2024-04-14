@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {ForwardIcon} from "@/icons/icons";
 import LinkButton from "@/app/_Components/ui/LinkButton";
 import ToggleButton from "@/app/_Components/ui/ToggleButton";
-function ProductList({className,children}) {
+function ProductList({className,children,editProduct,setEditProduct}) {
   return (
     <div className={`${className}relative overflow-x-auto shadow-md `}>
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -49,14 +49,16 @@ function ProductList({className,children}) {
               <ToggleButton/>
               </td>
               <td className="px-6 py-4">
-                <Link
-                  href="/restaurants/restaurant/productsandcategories/products"
-                  className="font-medium text-white text-center dark:text-blue-500 hover:underline text-center"
+                <button
+                  onClick={()=>{
+                    setEditProduct(!editProduct)
+                  }}
+                  className="font-medium text-white  dark:text-blue-500 hover:underline text-center"
                 >
                   {/* <ForwardIcon className=" w-[8dvh]"/> */}
                   <LinkButton >Edit Product</LinkButton>
                   {/* Edit */}
-                </Link>
+                </button>
               </td>
             </tr>
           </tbody>
