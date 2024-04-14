@@ -51,14 +51,16 @@ const CategroyList = ({ className }) => {
               <td className="px-6 py-4">89</td>
               <td className="px-6 py-4">11</td>
               <td className="px-6 py-4">
+               
                 <Link
                   href="/restaurants/restaurant/productsandcategories/products"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline text-center"
+                  className="font-medium m-2 text-blue-600 dark:text-blue-500 hover:underline text-center"
                 >
                   {/* <ForwardIcon className=" w-[8dvh]"/> */}
                   <LinkButton className="">See Products</LinkButton>
                   {/* Edit */}
                 </Link>
+                <LinkButton className={""} >Edit Categories</LinkButton>
               </td>
             </tr>
           </tbody>
