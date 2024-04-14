@@ -1,8 +1,14 @@
+"use client"
+import { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
 import {ForwardIcon} from "@/icons/icons"
 import LinkButton from "@/app/_Components/ui/LinkButton";
+import Modal from "@/app/_Components/ui/Modal";
+import EditCategories from "@/restaurants/restaurant/productsandcategories/categories/EditCategories";
+
 const CategroyList = ({ className }) => {
+  const [editCategories,setEditCategories]=useState(false);
   return (
     <>
       <div className={`${className}relative overflow-x-auto shadow-md `}>
@@ -60,11 +66,18 @@ const CategroyList = ({ className }) => {
                   <LinkButton className="">See Products</LinkButton>
                   {/* Edit */}
                 </Link>
-                <LinkButton className={""} >Edit Categories</LinkButton>
+                <LinkButton className={""} ><span onClick={()=>setEditCategories(!editCategories)}>Edit Categories</span></LinkButton>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div>
+      {editCategories && <Modal title={"Add Categories"} isOpen={editCategories} closeModal={()=>{
+    setEditCategories(false);
+  }}>
+    <EditCategories/>
+  </Modal>}
       </div>
     </>
   );
