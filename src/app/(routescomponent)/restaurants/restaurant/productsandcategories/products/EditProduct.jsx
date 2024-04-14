@@ -31,7 +31,7 @@ function EditProduct({ className }) {
           </p>
         </div>
         <h3 className="flex justify-center items-center">TAXES</h3>
-        <div className="bg-blue-400 flex justify-center items-center min-h-[5dvh] my-2 p-5">
+        <div className="bg-blue-400 flex justify-center items-center min-h-[5dvh] m-2 p-5">
         {/* <span>Tax1</span><span>(15% on product price){" : "}</span><span className="bg-red-400 flex items-center h-[1dvh]"><ToggleButton className={"bg-green-500 "}/></span> */}
        {/* <RadioButtonGroup/> */}
        {/* <HorizontalRadioList/> */}
@@ -40,8 +40,15 @@ function EditProduct({ className }) {
        <VerticalRadioWithSubText className={"flex"}  text={"Tax 3"} subText={"(35% on product price)"}/>
        <VerticalRadioWithSubText className={"flex"} text={"Tax 4"} subText={"(45% on product price)"}/>
        <VerticalRadioWithSubText className={"flex "} text={"Tax 5"} subText={"(55% on product price)"}/>
-
-
+        </div>
+        <h3 className="flex justify-center m-2">CHARGES</h3>
+        <div className="bg-yellow-400">
+           <div className="flex justify-center m-2">
+           <span className="inline-flex justify-center my-auto items-center">Take-Away Charges</span> <ToggleButton className={"w-[10dvw] py-2"}/>
+           <span className="inline-flex my-auto items-center">Dine-In Charges</span> <ToggleButton className={"w-[10dvw] py-2"}/>
+           <span className="inline-flex my-auto items-center">Book Table Charges</span> <ToggleButton className={"w-[10dvw] py-2"}/>
+           </div>
+          
         </div>
       </div>
     </div>
