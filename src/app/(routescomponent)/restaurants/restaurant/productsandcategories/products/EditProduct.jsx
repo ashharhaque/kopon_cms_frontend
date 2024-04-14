@@ -50,6 +50,23 @@ function EditProduct({ className }) {
            </div>
           
         </div>
+        <h3 className="flex justify-center m-2">SPICENESS</h3>
+        <div className="bg-blue-400 flex justify-center items-center min-h-[5dvh] m-2 p-5">
+        {/* <span>Tax1</span><span>(15% on product price){" : "}</span><span className="bg-red-400 flex items-center h-[1dvh]"><ToggleButton className={"bg-green-500 "}/></span> */}
+       {/* <RadioButtonGroup/> */}
+       {/* <HorizontalRadioList/> */}
+       <VerticalRadioWithSubText className={"flex"}  text={"MILD"} subText={"(15% LESS CHILLY)"}/>
+       <VerticalRadioWithSubText className={"flex"}  text={"SPICY"} subText={"(20% MORE CHILLY)"}/>
+       <VerticalRadioWithSubText className={"flex"}  text={"MEDIUM"} subText={"(5% LESS CHILLY)"}/>
+        </div>
+        <h3 className="flex justify-center m-2">VEG OR NON VEG</h3>
+        <div className="bg-blue-400 flex justify-center items-center min-h-[5dvh] m-2 p-5">
+        {/* <span>Tax1</span><span>(15% on product price){" : "}</span><span className="bg-red-400 flex items-center h-[1dvh]"><ToggleButton className={"bg-green-500 "}/></span> */}
+       {/* <RadioButtonGroup/> */}
+       {/* <HorizontalRadioList/> */}
+       <VerticalRadioWithSubText className={"flex"}  text={"VEG"} subText={"(CATEGORISED AS VEGETERIAN FOOD)"}/>
+       <VerticalRadioWithSubText className={"flex"}  text={"NON-VEG"} subText={"(CATEGORISED AS NON VEGETERIAN FOOD)"}/>
+        </div>
       </div>
     </div>
   );
