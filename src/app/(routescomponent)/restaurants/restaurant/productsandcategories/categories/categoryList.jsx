@@ -73,7 +73,7 @@ const CategroyList = ({ className }) => {
         </table>
       </div>
       <div>
-      {editCategories && <Modal title={"Add Categories"} isOpen={editCategories} closeModal={()=>{
+      {editCategories && <Modal title={"Edit Categories"} isOpen={editCategories} closeModal={()=>{
     setEditCategories(false);
   }}>
     <EditCategories/>
