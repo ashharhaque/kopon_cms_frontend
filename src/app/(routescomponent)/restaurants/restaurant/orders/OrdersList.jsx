@@ -1,14 +1,11 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { ForwardIcon } from "@/icons/icons";
 import LinkButton from "@/app/_Components/ui/LinkButton";
 import Modal from "@/app/_Components/ui/Modal";
-import EditCategories from "@/restaurants/restaurant/productsandcategories/categories/EditCategories";
-
+import OrderDetails from "@/restaurants/restaurant/orders/OrderDetails";
 const OrdersList = ({ className }) => {
-  const [editCategories, setEditCategories] = useState(false);
+const [seeOrderDetails,setSeeOrderDetails]=useState(false);
   return (
     <>
       <div className={`${className}relative overflow-x-auto shadow-md `}>
@@ -50,37 +47,23 @@ const OrdersList = ({ className }) => {
               <td className="px-6 py-4 font-medium text-gray-900 text-wrap whitespace-nowrap dark:text-white"><span className=" border-green-300  border-2 p-3">In-Process</span></td>
               <td className="px-6 py-4 font-medium text-gray-900 text-wrap whitespace-nowrap dark:text-white">1234</td>
               <td className="px-6 py-4">
-                <Link
-                  href="/restaurants/restaurant/productsandcategories/products"
-                  className="font-medium m-2 text-blue-600 dark:text-blue-500 hover:underline text-center"
-                >
+               
                   {/* <ForwardIcon className=" w-[8dvh]"/> */}
-                  <LinkButton className="">See Products</LinkButton>
-                  {/* Edit */}
-                </Link>
-                <LinkButton className={""}>
-                  <span onClick={() => setEditCategories(!editCategories)}>
-                    Edit Categories
-                  </span>
-                </LinkButton>
+                  <LinkButton className=""><span onClick={()=>{
+                    console.log("on order details click-->")
+                    setSeeOrderDetails(true);
+                  }}>See Order</span></LinkButton>
+              
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div>
-        {editCategories && (
-          <Modal
-            title={"Edit Categories"}
-            isOpen={editCategories}
-            closeModal={() => {
-              setEditCategories(false);
-            }}
-          >
-            <EditCategories />
-          </Modal>
-        )}
-      </div>
+     <div>
+        <Modal isOpen={seeOrderDetails} title={"Order Details"}>
+            <OrderDetails/>
+        </Modal>
+     </div>
     </>
   );
 };
