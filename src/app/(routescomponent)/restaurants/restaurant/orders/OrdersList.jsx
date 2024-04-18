@@ -61,7 +61,7 @@ const [seeOrderDetails,setSeeOrderDetails]=useState(false);
       </div>
      <div>
         <Modal isOpen={seeOrderDetails} title={"Order Details"}>
-            <OrderDetails/>
+            <OrderDetails className={"text-black"}/>
         </Modal>
      </div>
     </>
