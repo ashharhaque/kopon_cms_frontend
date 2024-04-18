@@ -8,7 +8,7 @@ function Orders() {
       <ul className="bg-red-400 flex justify-center  min-h-[13dvh] ">
         <li className="bg-yellow-300 relative min-w-[15%] m-3 p-2  rounded-md flex justify-center items-center">
           ALL Orders
-          <CircleNumber className={"w-8 h-8"}>0</CircleNumber>
+          <CircleNumber className="">0</CircleNumber>
           </li>
         <li className="bg-yellow-300 min-w-[15%] m-3 p-2 rounded-md flex justify-center items-center">Dine In Orders</li>
         <li className="bg-yellow-300 min-w-[15%] m-3 p-2 rounded-md flex justify-center items-center">Take Away Orders</li>
