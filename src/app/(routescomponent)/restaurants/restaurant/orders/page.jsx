@@ -10,8 +10,8 @@ function Orders() {
         <li className="bg-yellow-300 min-w-[15%] m-3 p-2 rounded-md flex justify-center items-center">Take Away Orders</li>
         <li className="bg-yellow-300 min-w-[15%] m-3 p-2 rounded-md flex justify-center items-center">Self Delievery Orders</li>
       </ul>
-      <div>
-        <Tabs className={"flex justify-center"}/>
+      <div className=" bg-blue-500  flex justify-center self-center  w-[80%]">
+        <Tabs className="bg-yellow-300"/>
       </div>
     </div>
   )
