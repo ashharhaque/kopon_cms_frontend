@@ -169,7 +169,7 @@ function ForwardIcon({ className }) {
   );
 }
 
-const OrderCircle = ({className}) => {
+const MailIcon = ({className}) => {
   return (
       <svg className={`${className} w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16`}>
           <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
@@ -178,7 +178,7 @@ const OrderCircle = ({className}) => {
   );
 };
 
-export default OrderCircle;
+export default MailIcon;
 
 export {
   ExpandSideBarIcon,
@@ -192,5 +192,5 @@ export {
   EmployeeIcon,
   RestaurantIcon,
   ForwardIcon,
-  OrderCircle
+  MailIcon
 };
