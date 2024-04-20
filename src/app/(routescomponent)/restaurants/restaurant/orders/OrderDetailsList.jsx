@@ -1,6 +1,6 @@
 function OrderDetailsList({ className }) {
   return (
-    <div className={`${className}`}>
+    <div className={`${className} overflow-auto`}>
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 overflow-scroll">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 overflow-scroll">
           <tr>
