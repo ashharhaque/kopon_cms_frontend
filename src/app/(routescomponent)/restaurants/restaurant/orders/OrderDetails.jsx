@@ -11,6 +11,7 @@ function OrderDetails({ className }) {
             <th scope="col" className="px-6 py-3">Order Type:</th>
             <th scope="col" className="px-6 py-3">Order Status:</th>
             <th scope="col" className="px-6 py-3">Total Duration:</th>
+            
           </tr>
         </thead>
         <tbody>
