@@ -23,7 +23,7 @@ function SingleRestaurant() {
         <Link href="/restaurants/restaurant/orders">
           <OptionBox>Live Orders</OptionBox>
         </Link>
-        <Link href="/restaurants/restaurant/statics">
+        <Link href="/restaurants/restaurant/staticsandreports">
           <OptionBox>Statics</OptionBox>
         </Link>
       </div>
