@@ -60,7 +60,7 @@ const [seeOrderDetails,setSeeOrderDetails]=useState(false);
         </table>
       </div>
      <div>
-        <Modal isOpen={seeOrderDetails} title={"Order Details"}>
+        <Modal isOpen={seeOrderDetails} title={"Order Details"} onSuccessfullTitle={"COMPLETE ORDER"}>
             <OrderDetails className={"text-black"}/>
         </Modal>
      </div>
