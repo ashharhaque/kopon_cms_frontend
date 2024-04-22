@@ -1,3 +1,4 @@
+import SummaryStatics from "@/restaurants/restaurant/staticsandreports/statics/SummaryStatics";
 function Statics() {
   return ( 
     <div>
@@ -7,19 +8,8 @@ function Statics() {
 
         
       </div>
-      <div className="bg-pink-300 flex justify-center m-3 p-3">
-        <div className="bg-green-400 p-3 m-3">
-          YEARLY SALES <span>RS.3000</span>
-        </div>
-        <div className="bg-yellow-500 p-3 m-3">
-          MONTHLY SALES <span>RS.2000</span>
-        </div>
-        <div className="bg-fuchsia-400 p-3 m-3">
-          WEEKLY SALES <span>RS.1000</span>
-        </div>
-        <div className="bg-blue-800 p-3 m-3">
-          DAILY SALES <span>RS.1000</span>
-        </div>
+      <div className="bg-pink-300  m-3 p-3">
+       <SummaryStatics/>
       </div>
     </div>
   );
